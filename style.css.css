@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1,5;
+    color:hotpink;
+    background-color: aliceblue;
+}
+header{
+    padding: 20px;
+    text-align: center;
+    color:white;
+    background-color: hotpink;
+}

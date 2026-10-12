@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mert Ali Senyildiz</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Week 3: this one line connects the CSS file -->
+    <!-- link rel="stylesheet" href="style.css" -->
+</head>
+<body>
+    <header>
+        <h1>Mert Ali Senyildiz</h1>
+        <p>Management Information Systems, 2nd year</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About me</h2>
+            <img src="images/profile.png" alt="Portrait placeholder" width="150" height="150">
+            <p>I am a second-year student of Management Information Systems. I am interested in web design and data, and in this course I am building my first web site. In my free time I play volle</p>
+        </section>
+
+        <section id="courses">
+            <h2>My courses this semester</h2>
+            <table>
+                <tr>
+                    <th>Course</th>
+                    <th>Day</th>
+                    <th>Time</th>
+                </tr>
+                <tr>
+                    <td>Web Design and Internet Programming</td>
+                    <td>Thursday</td>
+                    <td>09:00-12:00</td>
+                </tr>
+                <tr>
+                    <td>Database Management</td>
+                    <td>Monday</td>
+                    <td>13:00-16:00</td>
+                </tr>
+                <tr>
+                    <td>Statistics II</td>
+                    <td>Tuesday</td>
+                    <td>10:00-12:00</td>
+                </tr>
+                <tr>
+                    <td>Organizational Behaviour</td>
+                    <td>Wednesday</td>
+                    <td>14:00-17:00</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>Contact me</h2>
+            <!-- The form only collects data for now. From week 8, PHP receives it. -->
+            <form method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="topic">Topic</label>
+                <select id="topic" name="topic">
+                    <option value="course">A course</option>
+                    <option value="project">A project</option>
+                    <option value="other">Something else</option>
+                </select>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 N As</p>
